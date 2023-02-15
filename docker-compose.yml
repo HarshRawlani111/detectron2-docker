@@ -1,0 +1,9 @@
+#we use command docker-compose build to run docker-compose.yml file first which will will inturn run dockerfile
+version: "3"
+services:
+  detectron2-docker-jan27-uplink:
+    restart: always
+    container_name: detectron2-docker-jan27-uplink
+    image: detectron2-docker-jan27-uplink
+    build:
+      context: .
